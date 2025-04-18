@@ -2,6 +2,7 @@
 import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import Navbar from "@/components/Navbar/Navbar";
 
 export default function Home() {
   useEffect(() => {
@@ -12,5 +13,9 @@ export default function Home() {
       delay: 100,
     });
   }, []);
-  return <>Candy</>;
+  return (
+    <>
+      <Navbar></Navbar>
+    </>
+  );
 }
